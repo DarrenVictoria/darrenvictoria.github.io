@@ -29,16 +29,11 @@ jobs:
           # Assuming your build command is something like npm run build or yarn build
           npm run build
 
-      - name: Check directory structure
-        run: |
-          ls -l
-          ls -l dist
-
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: dist # Change this to the directory where your built files are located
+          name: docs
+          path: docs # Change this to the directory where your built files are located
 
   deploy:
     needs: build
@@ -50,16 +45,16 @@ jobs:
     steps:
       - name: Check if artifact exists
         run: |
-          if [ ! -d "dist" ]; then
-            echo "Error: 'dist' directory not found. Exiting..."
+          if [ ! -d "docs" ]; then
+            echo "Error: 'docs' directory not found. Exiting..."
             exit 1
           fi
 
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: dist
-          path: dist # Specify the directory where the artifact should be downloaded
+          name: docs
+          path: docs # Specify the directory where the artifact should be downloaded
 
       - name: Deploy to GitHub Pages
         id: deployment
