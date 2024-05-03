@@ -30,7 +30,7 @@ jobs:
           npm run build
 
       - name: Archive artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: github-pages
           path: docs # Change this to the directory where your built files are located
@@ -43,9 +43,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: github-pages
+          path: docs # Specify the directory where the artifact is stored
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          # Specify the directory containing the files to deploy
-          dir: github-pages # Change this to the directory where your built files are located
