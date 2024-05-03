@@ -43,6 +43,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Check repository contents
+        run: |
+          ls -l
+
+      - name: Check if docs directory exists
+        run: |
+          ls -l docs
+
       - name: Check if artifact exists
         run: |
           if [ ! -d "docs" ]; then
