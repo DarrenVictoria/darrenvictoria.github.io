@@ -48,4 +48,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # Specify the directory containing the files to deploy
-          dir: docs # Change this to the directory where your built files are located
+          dir: github-pages # Change this to the directory where your built files are located
