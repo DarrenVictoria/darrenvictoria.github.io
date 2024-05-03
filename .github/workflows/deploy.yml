@@ -1,15 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch's name
   push:
     branches: [main]
-
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-  # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -29,12 +24,16 @@ jobs:
           npx tailwindcss init -p
           npm install flowbite
 
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2
-        # with:
-        #   path: . # The root location of your Astro project inside the repository. (optional)
-        #   node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-        #   package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+      - name: Build your site
+        run: |
+          # Assuming your build command is something like npm run build or yarn build
+          npm run build
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: docs # Change this to the directory where your built files are located
 
   deploy:
     needs: build
@@ -44,6 +43,33 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Set working directory to repository root
+        run: cd $GITHUB_WORKSPACE
+
+      - name: Print current working directory
+        run: pwd
+
+      - name: Check repository contents
+        run: |
+          ls -l
+
+      - name: Check if docs directory exists
+        run: |
+          ls -l docs
+
+      - name: Check if artifact exists
+        run: |
+          if [ ! -d "docs" ]; then
+            echo "Error: 'docs' directory not found. Exiting..."
+            exit 1
+          fi
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: docs
+          path: docs # Specify the directory where the artifact should be downloaded
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
