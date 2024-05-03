@@ -47,7 +47,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: github-pages
-          path: github-pages # Specify the directory where the artifact is stored
+          path: /home/runner/work/darrenvictoria.github.io/darrenvictoria.github.io/github-pages # Specify the directory where the artifact is stored
 
       - name: Deploy to GitHub Pages
         id: deployment
