@@ -43,6 +43,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Set working directory to repository root
+        run: cd $GITHUB_WORKSPACE
+
       - name: Print current working directory
         run: pwd
 
