@@ -29,6 +29,11 @@ jobs:
           # Assuming your build command is something like npm run build or yarn build
           npm run build
 
+      - name: Check directory structure
+        run: |
+          ls -l
+          ls -l dist
+
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
