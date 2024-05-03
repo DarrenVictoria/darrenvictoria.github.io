@@ -4,9 +4,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
-  outDir: './docs',
-  integrations: [tailwind()],
-  site: 'https://darrenvictoria.github.io'
+  site: 'https://darrenvictoria.github.io',
+  integrations: [tailwind()]
+  
 
 });
