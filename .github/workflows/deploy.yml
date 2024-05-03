@@ -43,6 +43,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Print current working directory
+        run: pwd
+
       - name: Check repository contents
         run: |
           ls -l
