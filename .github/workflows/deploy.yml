@@ -32,7 +32,7 @@ jobs:
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
-          name: docs
+          name: github-pages
           path: docs # Change this to the directory where your built files are located
 
   deploy:
@@ -43,32 +43,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Set working directory to repository root
-        run: cd $GITHUB_WORKSPACE
-
-      - name: Print current working directory
-        run: pwd
-
-      - name: Check repository contents
-        run: |
-          ls -l
-
-      - name: Check if docs directory exists
-        run: |
-          ls -l docs
-
-      - name: Check if artifact exists
-        run: |
-          if [ ! -d "docs" ]; then
-            echo "Error: 'docs' directory not found. Exiting..."
-            exit 1
-          fi
-
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: docs
-          path: docs # Specify the directory where the artifact should be downloaded
 
       - name: Deploy to GitHub Pages
         id: deployment
