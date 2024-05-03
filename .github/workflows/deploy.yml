@@ -32,7 +32,7 @@ jobs:
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
-          name: docs
+          name: github-pages
           path: docs # Change this to the directory where your built files are located
 
   deploy:
