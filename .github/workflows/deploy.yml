@@ -20,8 +20,8 @@ jobs:
       # Install Tailwind CSS and Flowbite Tailwind
       - name: Install Tailwind CSS and Flowbite Tailwind
         run: |
-          npm install tailwindcss@latest postcss@latest autoprefixer@latest
-          npm install @flowbite/tailwindcss-flowbite
+          npx astro add tailwind
+          npm install flowbite
 
       # Build and upload your site
       - name: Build and upload your site
