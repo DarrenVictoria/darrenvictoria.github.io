@@ -5,42 +5,61 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 
 const cards = [
-  { src: '/path/to/image1.png', name: 'JavaScript' },
-  { src: '/path/to/image2.png', name: 'React' },
-  { src: '/path/to/image3.png', name: 'Node.js' },
-  { src: '/path/to/image4.png', name: 'MongoDB' },
-  { src: '/path/to/image5.png', name: 'Flutter' },
-  { src: '/path/to/image1.png', name: 'JavaScript' },
-  { src: '/path/to/image2.png', name: 'React' },
-  { src: '/path/to/image3.png', name: 'Node.js' },
-  { src: '/path/to/image4.png', name: 'MongoDB' },
-  { src: '/path/to/image5.png', name: 'Flutter' },
+  { src: '/assets/about/skills-icons/C.png', name: 'C' },
+  { src: '/assets/about/skills-icons/csharp.png', name: 'C#' },
+  { src: '/assets/about/skills-icons/java.png', name: 'Java' },
+  { src: '/assets/about/skills-icons/reactjs.png', name: 'React JS' },
+  { src: '/assets/about/skills-icons/firebase.png', name: 'Firebase' },
+  { src: '/assets/about/skills-icons/flutter.png', name: 'Flutter' },
+  { src: '/assets/about/skills-icons/azure.png', name: 'Azure' },
+  { src: '/assets/about/skills-icons/python.png', name: 'Python' },
+  { src: '/assets/about/skills-icons/materialui.png', name: 'Material UI' },
+  { src: '/assets/about/skills-icons/bootstrap5.png', name: 'Boostrap' },
+  { src: '/assets/about/skills-icons/html5.png', name: 'HTML' },
+  { src: '/assets/about/skills-icons/css3.png', name: 'CSS' },
+  { src: '/assets/about/skills-icons/markdown.png', name: 'Markdown' },
+  { src: '/assets/about/skills-icons/astro.png', name: 'Astro' },
+  { src: '/assets/about/skills-icons/figma.png', name: 'Figma' },
+  { src: '/assets/about/skills-icons/github.png', name: 'GitHub' },
+  { src: '/assets/about/skills-icons/js.png', name: 'JavaScript' },
+  { src: '/assets/about/skills-icons/ps.png', name: 'Photoshop' },
+  { src: '/assets/about/skills-icons/ai.png', name: 'Illustrator' },
+  { src: '/assets/about/skills-icons/php.png', name: 'PhP' },
+  { src: '/assets/about/skills-icons/postman.png', name: 'Postman' },
+  
+
+  
 ];
 
 const certificationCards = [
   { src: '/assets/about/certification-icons/microsoft_logo.jpg', name: 'Fundamentals of Azure AI services', link: 'https://learn.microsoft.com/api/achievements/share/en-gb/JDVictoria-7636/X2CTBKMY?sharingId=E85995488E12FF08' },
-  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Introduction to Prompt Engineering for Generative AI', link: 'https://www.linkedin.com/learning/certificates/892760c0c51145d56c5f720aefe69ec3a8e8dc89a8392d53d8b82b0578434148' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Introduction to Prompt Engineering', link: 'https://www.linkedin.com/learning/certificates/892760c0c51145d56c5f720aefe69ec3a8e8dc89a8392d53d8b82b0578434148' },
   { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'UX Foundations: Style Guides and Design Systems', link: 'https://www.linkedin.com/learning/certificates/955f804cba9938921bba81ba7b4fe0b9d442c967d315de5cb8d75db1ac554d18' },
-  { src: '/path/to/cert-icon.png', name: 'Microsoft Certified Azure Developer', link: 'https://www.example.com/azure-cert' },
-  { src: '/path/to/cert-icon.png', name: 'Google Cloud Certified Professional Cloud Architect', link: 'https://www.example.com/google-cloud-cert' },
+  { src: '/assets/about/certification-icons/cisco_logo.jpg', name: 'Introduction to IoT', link: 'https://www.credly.com/badges/ecd1c587-12ab-4b05-a7de-de77201b240f/linked_in_profile' },
+  { src: '/assets/about/certification-icons/cisco_logo.jpg', name: 'Introduction to CyberSecurity', link: 'https://www.credly.com/badges/0d6d4e8d-2404-4b6d-8373-97bc4d8cf468/linked_in_profile' },
+  { src: '/assets/about/certification-icons/ibm_logo.jpg', name: 'Data Science - Level 1', link: 'https://www.credly.com/badges/50f47d56-b4dc-4b9f-9d99-19bddd0482cd/linked_in_profile' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Artificial Intelligence Foundations : Machine Learning', link: 'https://www.linkedin.com/learning/certificates/28ca4d0fd47e15a5e8e835d649a683eb274dbdaa4a82d7a0ee66423b4ef59fc6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bhn%2Bez4pDQ%2FW7vc%2F5tlwVJg%3D%3D' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Artificial Intelligence Foundations : Neural Networks', link: 'https://www.linkedin.com/learning/certificates/050e996b0f9306a387e9b6881be7faffa4490f25566f7db5df1a8e4f9e5d02ea?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bhn%2Bez4pDQ%2FW7vc%2F5tlwVJg%3D%3D' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Artificial Intelligence Foundations : Thinking Machine', link: 'https://www.linkedin.com/learning/certificates/08a1b8af51b87b9077e18077c73f80beb42ae102387bc232f0e9362175cd30dd?u=26140778' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Artificial Intelligence Foundations : Thinking Machine', link: 'https://www.linkedin.com/learning/certificates/08a1b8af51b87b9077e18077c73f80beb42ae102387bc232f0e9362175cd30dd?u=26140778' },
+  { src: '/assets/about/certification-icons/sololearn_inc__logo.jpg', name: 'Introduction to Java', link: 'https://www.sololearn.com/en/certificates/CC-9KIFCOSU' },
+  { src: '/assets/about/certification-icons/sololearn_inc__logo.jpg', name: 'Introduction to C#', link: 'https://www.sololearn.com/certificates/CC-7OKPWGDQ' },
+  { src: '/assets/about/certification-icons/sololearn_inc__logo.jpg', name: 'Introduction to JavaScript', link: 'https://api2.sololearn.com/v2/certificates/CC-QPPVFZYX/image/jpg' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Learning Cloud Computing : Core Concepts', link: 'https://www.linkedin.com/learning/certificates/01a7e993dba10616c60fdb5a76a738fc0cd860a744b455055fb172b031aea066?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BTYchmzsWT4KpZpkZscUZFg%3D%3D' },
+  { src: '/assets/about/certification-icons/linkedin_logo.jpg', name: 'Strategic Thinking', link: 'https://www.linkedin.com/learning/certificates/71b1465157a3f443e5e42d0c0f13dfca6b1dc3842a597ad0f422f810260e967e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BTYchmzsWT4KpZpkZscUZFg%3D%3D' },
 ];
 
 
 ---
 
-<BaseLayout title="About | DV" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | DV" description="Tech Stack and Certifications of Darren Victoria">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="Tech Stack & Certifications"
 				tagline="Here you can delve into all my skills and certifications that I've obtained"
 			>
-				<!-- <img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/> -->
+				
 			</Hero>
 					
 
@@ -52,7 +71,7 @@ const certificationCards = [
 						{cards.map((card) => (
 						  <div class="w-full">
 							<div class="relative w-full h-32 bg-[#07182E] rounded-2xl overflow-hidden flex items-center justify-center">
-							  <div class="absolute inset-1 bg-[#07182E] rounded-lg"></div>
+							  <div class="absolute inset-1 bg-[#07182E] rounded-xl"></div>
 							  <div class="relative z-10 flex flex-col items-center">
 								<img src={card.src} alt={card.name} class="w-8 h-8 mb-2" />
 								<h2 class="text-white text-2xl">{card.name}</h2>
@@ -74,7 +93,7 @@ const certificationCards = [
 						  <div class="absolute inset-1 bg-[#07182E] rounded-lg"></div>
 						  <div class="relative z-10 flex flex-col items-center">
 							<img src={card.src} alt={card.name} class="w-6 h-6 mb-2" />
-							<h3 class="text-white text-lg text-center">{card.name}</h3>
+							<h3 class="text-white text-base text-center">{card.name}</h3>
 						  </div>
 						  <div class="absolute w-72 h-72 bg-gradient-to-b from-[#2f7492] via-[#25bdd8] to-[#2f7492] dark:from-[#3661bd] dark:via-[#07182e] dark:to-[#2a5e5b] hover:animate-spin-normal blur-lg rounded-full"></div>
 						</div>
