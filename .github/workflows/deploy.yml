@@ -1,10 +1,14 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [main]
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -13,27 +17,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-
-      - name: Install Tailwind CSS and Flowbite
-        run: |
-          npm install -D tailwindcss postcss autoprefixer
-          npx tailwindcss init -p
-          npm install flowbite
-
-      - name: Build your site
-        run: |
-          # Assuming your build command is something like npm run build or yarn build
-          npm run build
-
-      - name: Archive artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: github-pages
-          path: docs # Change this to the directory where your built files are located
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+        # with:
+          # path: . # The root location of your Astro project inside the repository. (optional)
+          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
     needs: build
@@ -41,14 +33,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: github-pages
-          path: /home/runner/work/darrenvictoria.github.io/darrenvictoria.github.io/github-pages # Specify the directory where the artifact is stored
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
