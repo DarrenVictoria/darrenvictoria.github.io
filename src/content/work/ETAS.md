@@ -1,11 +1,10 @@
 ---
-title: EnviroTrackAquaShield - IOT Device
+title: ETAS - IOT Device
 publishDate: 2024-05-07 00:00:00
 img: /assets/projects/ETAS/thumbnail.jpeg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Enviro Track Aqua Shield
 tags:
   - IOT
   - Arduino

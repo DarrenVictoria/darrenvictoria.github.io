@@ -86,12 +86,20 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 75ch;
+		max-width: 105ch;
 		margin-inline: auto;
 	}
 
 	.content > :global(* + *) {
 		margin-top: 1rem;
+	}
+
+	.content :global(h1){
+		font-size: xxx-large;
+	}
+
+	.content :global(h2){
+		font-size: xx-large;
 	}
 
 	.content :global(h1),
@@ -100,6 +108,7 @@ const { Content } = await entry.render();
 	.content :global(h4),
 	.content :global(h5) {
 		margin: 1.5rem 0;
+
 	}
 
 	.content :global(img) {
