@@ -1,5 +1,5 @@
 ---
-title: Green Supermarket
+title: Green Supermarket - Java
 publishDate: 2023-05-06 00:00:00
 img: /assets/projects/greensupermarket/thumbnail.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
