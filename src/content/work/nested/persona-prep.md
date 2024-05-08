@@ -9,7 +9,7 @@ tags:
   - React
   - AI APIs
   - Firebase
-  - Fireauth
+
 ---
 
 # PersonaPrep
