@@ -1,22 +1,28 @@
 ---
 title: Gallery of Galleries Web App
 publishDate: 2019-10-02 00:00:00
-img: /assets/stock-4.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img: /assets/projects/galleryofgalleries/Cover.png
+img_alt: Homepage
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Static Website for a collection of Art Galleries
 tags:
-  - Design
-  - Branding
+  - HTML5
+  - CSS3
+  - JS
+  - JSON
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## About 
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+The Gallery of Galleries website was built with the idea in mind to create a directory for Galleries within the small island Sri Lanka. It contains features ranging from the ability to leave reviews on the various art galleries, an exhibition timeline you can view and then use to visit exhibitions around the island , a list of all the galleries , the history of sri lankan art along with a Emerging AI Art display Gallery . The website also contains a fully functional backend allowing admins to edit and alter the variable aspects within the website.The website was built as a submission to fulfill the requirements of our 1st Year 2nd Semester Web Group project.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+## Project Snapshots
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+![Sanpshot1](/assets/projects/galleryofgalleries/1.png)
+![Sanpshot2](/assets/projects/galleryofgalleries/2.png)
+![Sanpshot3](/assets/projects/galleryofgalleries/3.png)
+![Sanpshot4](/assets/projects/galleryofgalleries/4.png)
+![Sanpshot5](/assets/projects/galleryofgalleries/5.png)
+![Sanpshot6](/assets/projects/galleryofgalleries/6.png)
+![Sanpshot7](/assets/projects/galleryofgalleries/7.png)
+![Sanpshot8](/assets/projects/galleryofgalleries/8.png)
